@@ -9,3 +9,12 @@ body{
     font-style: normal;
     background-image: url();
 }
+.logo{
+    position: fixed;
+    margin-left: 0.1%;
+}
+.navbar_main ul{
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
