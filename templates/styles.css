@@ -12,6 +12,9 @@ body{
     background-image: url();
     background-color: #796aa4;
 }
+main{
+    padding-bottom: 7vh;
+}
 a{
     color: black;
     font-size: 3vw;
@@ -43,7 +46,7 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:flex-start;
     width: 100%;
 }
 .main_clumn1{
@@ -74,6 +77,12 @@ input{
 .navbar_main a{
     text-decoration: none;
 }
+.navbar_main li:hover{
+    transition-property: background-color, border-color;
+    transition-duration: .5s;
+    background-color:#a170cc;
+    border-color:#28aa2d
+}
 .save_post{
     color: black;
     font-size: 2vw;
@@ -83,8 +92,91 @@ input{
     display: flex;
     flex-direction: column;
 }
+.category_body{
+    padding-left: 0;
+    padding-right: 4.25vw;
+}
 .navbar_category{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-left: 4vw;
+}
+.navbar_category a{
+    background-color: #ad7fd5;
+    text-decoration: none;
+    cursor: pointer;
+    border: #89dd8c;
+    border-width: 0.7vw;
+    border-style: groove;
+    text-align: center;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.navbar_category a:hover{
+    transition-property: background-color, border-color;
+    transition-duration: .5s;
+    background-color:#9165b7;
+    border-color:#28aa2d
+}
+.img_settings_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.img_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_box .colum{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10px 10px 4vw 4vw;
+}
+.img_box .colum img{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: #89dd8c;
+    border-width: 0.7vw;
+    border-style: groove;
+}
+.account_body{
+    display: flex;
+    flex-direction: column;
+}
+.navbar_account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar_account a{
+    background-color: #ad7fd5;
+    text-decoration: none;
+    cursor: pointer;
+    border: #89dd8c;
+    border-width: 0.7vw;
+    border-style: groove;
+    text-align: center;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.account_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.board{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: #89dd8c;
+    border-width: 0.7vw;
+    border-style: groove;
 }
