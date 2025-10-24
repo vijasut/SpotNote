@@ -21,14 +21,15 @@ h1{
 }
 p{
     font-size: 3vw;
+    margin: 0;
 }
 input{
     font-size: 2vw;
     background-color: #becfb0;
 }
 .logo{
-    position: fixed;
-    margin-left: 0.1%;
+    position: relative;
+    margin-left: 0.01%;
 }
 .navbar_main ul{
     display:flex;
@@ -73,8 +74,17 @@ input{
 .navbar_main a{
     text-decoration: none;
 }
+.save_post{
+    color: black;
+    font-size: 2vw;
+}
 .main_clumn2{
     background-color: #ad7fd5;
     display: flex;
     flex-direction: column;
+}
+.navbar_category{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
