@@ -148,6 +148,7 @@ input{
 .account_body{
     display: flex;
     flex-direction: column;
+    
 }
 .navbar_account{
     display: flex;
@@ -166,6 +167,12 @@ input{
     padding-left: 0.5vw;
     padding-right: 0.5vw;
 }
+.navbar_account a:hover{
+    transition-property: background-color, border-color;
+    transition-duration: .5s;
+    background-color:#9165b7;
+    border-color:#28aa2d
+}
 .account_block{
     display: flex;
     flex-direction: row;
@@ -176,7 +183,82 @@ input{
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
+    border: #becfb0#ad7fd5;
+    border-width: 0.7vw;
+    border-style: groove;
+    background-color: #89dd89;
+    text-align: center;
+}
+.settings_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.colum_settings1{
+    width: 75%;
+}
+.colum_settings1 .settings p{
+    text-align: center;
+}
+.colum_settings2{
+    width: 25%;
+}
+.colum_settings2 li{
+    background-color: #ad7fd5;
+    display: block;
     border: #89dd8c;
     border-width: 0.7vw;
     border-style: groove;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 3%;
+}
+.colum_settings2 li:hover{
+    transition-property: background-color, border-color;
+    transition-duration: .5s;
+    background-color:#9165b7;
+    border-color:#28aa2d
+}
+.navbar_settings a{
+    text-decoration: none;
+}
+.theme_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.Light_mod{
+    background-color: #ad7fd5;
+    cursor: pointer;
+    border: #89dd8c;
+    border-width: 0.7vw;
+    border-style: groove;
+    text-align: center;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.Light_mod:hover{
+    transition-property: background-color, border-color;
+    transition-duration: .5s;
+    background-color:#9165b7;
+    border-color:#28aa2d
+}
+.Dark_mod{
+    background-color: #ad7fd5;
+    cursor: pointer;
+    border: #89dd8c;
+    border-width: 0.7vw;
+    border-style: groove;
+    text-align: center;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+.Dark_mod:hover{
+    transition-property: background-color, border-color;
+    transition-duration: .5s;
+    background-color:#9165b7;
+    border-color:#28aa2d
 }
