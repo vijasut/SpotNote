@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
 
 body{
     width: 100%; height: 100vh;
@@ -8,6 +9,7 @@ body{
     padding-bottom: 0;
     box-sizing: border-box;
     font-family: "Oswald", sans-serif;
+    /*"Handjet", sans-serif*/
     font-style: normal;
     background-image: url();
     background-color: #796aa4;
@@ -65,7 +67,7 @@ input{
     margin: 0px;
 }
 .navbar_main li{
-    display: block;
+    display: flex;
     text-decoration: none;
     cursor: pointer;
     border: #89dd8c;
@@ -79,7 +81,7 @@ input{
 }
 .navbar_main li:hover{
     transition-property: background-color, border-color;
-    transition-duration: .5s;
+    transition-duration: .2s;
     background-color:#a170cc;
     border-color:#28aa2d
 }
@@ -115,7 +117,7 @@ input{
 }
 .navbar_category a:hover{
     transition-property: background-color, border-color;
-    transition-duration: .5s;
+    transition-duration: .2s;
     background-color:#9165b7;
     border-color:#28aa2d
 }
@@ -169,7 +171,7 @@ input{
 }
 .navbar_account a:hover{
     transition-property: background-color, border-color;
-    transition-duration: .5s;
+    transition-duration: .2s;
     background-color:#9165b7;
     border-color:#28aa2d
 }
@@ -218,7 +220,7 @@ input{
 }
 .colum_settings2 li:hover{
     transition-property: background-color, border-color;
-    transition-duration: .5s;
+    transition-duration: .2s;
     background-color:#9165b7;
     border-color:#28aa2d
 }
@@ -242,7 +244,7 @@ input{
 }
 .Light_mod:hover{
     transition-property: background-color, border-color;
-    transition-duration: .5s;
+    transition-duration: .2s;
     background-color:#9165b7;
     border-color:#28aa2d
 }
@@ -258,7 +260,7 @@ input{
 }
 .Dark_mod:hover{
     transition-property: background-color, border-color;
-    transition-duration: .5s;
+    transition-duration: .2s;
     background-color:#9165b7;
     border-color:#28aa2d
 }
