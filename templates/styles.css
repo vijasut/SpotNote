@@ -11,8 +11,29 @@ body{
     font-family: "Oswald", sans-serif;
     /*"Handjet", sans-serif*/
     font-style: normal;
-    background-image: url();
-    background-color: #796aa4;
+  --s: 100px; /* control the size */
+  --c1: #89dd8c;
+  --c2: #796aa4;
+
+  --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
+    var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%, var(--c2) 66% 76%,
+    var(--c1) 76% 86%, var(--c2) 86% 96%;
+  background: radial-gradient(
+      100% 100% at 100% 0,
+      var(--c1) 4%,
+      var(--_g),
+      #0008 96%,
+      #0000
+    ),
+    radial-gradient(
+        100% 100% at 0 100%,
+        #0000,
+        #0008 4%,
+        var(--_g),
+        var(--c1) 96%
+      )
+      var(--c1);
+  background-size: var(--s) var(--s);
 }
 main{
     padding-bottom: 7vh;
@@ -31,6 +52,12 @@ p{
 input{
     font-size: 2vw;
     background-color: #becfb0;
+}
+button{
+    font-size: 3vw;
+    font-family: "Oswald", sans-serif;
+    /*"Handjet", sans-serif*/
+    font-style: normal;
 }
 .logo{
     position: relative;
@@ -89,6 +116,14 @@ input{
     color: black;
     font-size: 2vw;
 }
+.post_category_btn select{
+    font-size: 2vw;
+    width: 100%;
+    background-color: #ad7fd5;
+    border: #89dd8c;
+    border-width: 0.7vw;
+    border-style: inset outset;
+}
 .main_clumn2{
     background-color: #ad7fd5;
     display: flex;
@@ -121,6 +156,77 @@ input{
     background-color:#9165b7;
     border-color:#28aa2d
 }
+
+.navbar_category button{
+    background-color: #ad7fd5;
+    text-decoration: none;
+    cursor: pointer;
+    border: #89dd8c;
+    border-style: groove;
+    border-width: 0.7vw;
+    text-align: center;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.navbar_category .spilne_btn:hover{
+    transition-property: background-color, border-color;
+    transition-duration: .2s;
+    background-color:#9165b7;
+    border-color:#28aa2d
+}
+
+.navbar_category .sviatoslav_btn{
+    border-color: #762273;
+    color:#ffffff;
+    text-shadow: 0 0 10px rgb(41, 0, 48);
+    background-color: #52802a;
+    border-style: ridge outset ridge inset;
+}
+.navbar_category .sviatoslav_btn:hover{
+    border-color: #4b164a;
+    background-color: #38571d;
+    box-shadow: 0 0 15px 10px #581a56;
+}
+
+.navbar_category .zahar_btn{
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.726);
+    border-style: ridge double   groove;
+}
+.navbar_category .zahar_btn:hover{
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+    box-shadow: 0 0 10px 5px #ff1414aa;
+    background-color: #000000;
+    border-color: #f16f6f;
+    color: #f16f6f;
+}
+
+.navbar_category .rostyslav_btn{
+    background-color: #000000;
+    border-color: #35ff38;
+    color: #2fff00;
+    box-shadow: 0 0 15px 5px rgba(57, 250, 118, 0.8);
+    text-shadow: 0 0 10px rgba(57, 250, 118, 0.8)
+    0 0 20px rgba(57, 250, 118, 0.8);
+    border-style: double dashed;
+}
+.navbar_category .rostyslav_btn:hover{
+    border-style: groove double ridge;
+}
+
+.navbar_category .katya_btn{
+    border-color: #FDABAB;
+    background-image: linear-gradient(to bottom, #fc8ffc, #9BBFF8) ;
+    box-shadow: 0 0 15px 5px rgba(250, 189, 57, 0.79);
+    border-style: groove ridge;  
+}
+.navbar_category .katya_btn:hover{
+    box-shadow: 0 0 25px 10px rgb(250, 189, 57);
+}
+
 .img_settings_cont{
     display: flex;
     flex-direction: column;
@@ -139,17 +245,41 @@ input{
     width: 30%;
     margin: 10px 10px 4vw 4vw;
 }
-.img_box .colum img{
+.img_box .colum p{
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
     border: #89dd8c;
     border-width: 0.7vw;
     border-style: groove;
+    background-color: #ad7fd5;
 }
 .account_body{
     display: flex;
     flex-direction: column;
+  --s: 100px; /* control the size */
+  --c1: #becfb0;
+  --c2: #355c7d;
+
+  --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
+    var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%, var(--c2) 66% 76%,
+    var(--c1) 76% 86%, var(--c2) 86% 96%;
+  background: radial-gradient(
+      100% 100% at 100% 0,
+      var(--c1) 4%,
+      var(--_g),
+      #0008 96%,
+      #0000
+    ),
+    radial-gradient(
+        100% 100% at 0 100%,
+        #0000,
+        #0008 4%,
+        var(--_g),
+        var(--c1) 96%
+      )
+      var(--c1);
+  background-size: var(--s) var(--s);
     
 }
 .navbar_account{
@@ -263,4 +393,33 @@ input{
     transition-duration: .2s;
     background-color:#9165b7;
     border-color:#28aa2d
+}
+.category_sviatoslav .img_settings_cont .img_box .colum p{
+    border-color: #762273;
+    color:#ffffff;
+    text-shadow: 0 0 10px rgb(41, 0, 48);
+    background-color: #52802a;
+    border-style: ridge outset ridge inset;
+}
+.category_katya .img_settings_cont .img_box .colum p{
+    border-color: #FDABAB;
+    background-image: linear-gradient(to bottom, #fc8ffc, #9BBFF8) ;
+    box-shadow: 0 0 15px 5px rgba(250, 189, 57, 0.79);
+    border-style: groove ridge;   
+}
+.category_rostyslav .img_settings_cont .img_box .colum p{
+    background-color: #000000;
+    border-color: #35ff38;
+    color: #2fff00;
+    box-shadow: 0 0 15px 5px rgba(57, 250, 118, 0.8);
+    text-shadow: 0 0 10px rgba(57, 250, 118, 0.8)
+    0 0 20px rgba(57, 250, 118, 0.8);
+    border-style: double dashed;
+}
+.category_zahar .img_settings_cont .img_box .colum p{
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.726);
+    border-style: ridge double   groove;
 }
